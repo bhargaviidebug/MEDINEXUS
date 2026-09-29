@@ -84,25 +84,31 @@ def change_status():
     print("Patient not found")
 
 
-while True:
-    print("\n--- MEDINEXUS ---")
-    print("1. Register")
-    print("2. Search")
-    print("3. History")
-    print("4. Change Status")
-    print("5. Exit")
+def patient_menu():
+    while True:
+        print("\n--- PATIENT MANAGEMENT ---")
+        print("1. Register")
+        print("2. Search")
+        print("3. History")
+        print("4. Change Status")
+        print("5. Exit")
 
-    choice = input("Enter choice: ")
+        choice = input("Enter choice: ")
 
-    if choice == "1":
-        register()
-    elif choice == "2":
-        search()
-    elif choice == "3":
-        history()
-    elif choice == "4":
-        change_status()
-    elif choice == "5":
-        break
-    else:
-        print("Wrong choice")
+        if choice == "1":
+            register()
+
+        elif choice == "2":
+            search()
+
+        elif choice == "3":
+            history()
+
+        elif choice == "4":
+            change_status()
+
+        elif choice == "5":
+            break
+
+        else:
+            print("Wrong choice")
