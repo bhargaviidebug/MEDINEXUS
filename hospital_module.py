@@ -3,71 +3,73 @@ medicines = []
 bills = []
 
 
-while True:
+def hospital_menu():
 
-    print("\n--- HOSPITAL SERVICES ---")
-    print("1. Admit Patient")
-    print("2. Add Medicine")
-    print("3. Make Bill")
-    print("4. Show Admissions")
-    print("5. Show Bills")
-    print("6. Exit")
+    while True:
 
-    choice = input("Enter choice: ")
+        print("\n--- HOSPITAL SERVICES ---")
+        print("1. Admit Patient")
+        print("2. Add Medicine")
+        print("3. Make Bill")
+        print("4. Show Admissions")
+        print("5. Show Bills")
+        print("6. Exit")
 
-    if choice == "1":
+        choice = input("Enter choice: ")
 
-        patient = input("Enter patient ID: ")
-        room = input("Enter room number: ")
+        if choice == "1":
 
-        admissions.append([patient, room])
+            patient = input("Enter patient ID: ")
+            room = input("Enter room number: ")
 
-        print("Patient admitted")
+            admissions.append([patient, room])
 
-    elif choice == "2":
+            print("Patient admitted")
 
-        medicine = input("Enter medicine name: ")
-        quantity = input("Enter quantity: ")
+        elif choice == "2":
 
-        medicines.append([medicine, quantity])
+            medicine = input("Enter medicine name: ")
+            quantity = input("Enter quantity: ")
 
-        print("Medicine added")
+            medicines.append([medicine, quantity])
 
-    elif choice == "3":
+            print("Medicine added")
 
-        patient = input("Enter patient ID: ")
-        amount = input("Enter bill amount: ")
+        elif choice == "3":
 
-        bills.append([patient, amount])
+            patient = input("Enter patient ID: ")
+            amount = input("Enter bill amount: ")
 
-        print("Bill created")
-        print("Amount:", amount)
+            bills.append([patient, amount])
 
-    elif choice == "4":
+            print("Bill created")
+            print("Amount:", amount)
 
-        print("\nAdmissions")
+        elif choice == "4":
 
-        if len(admissions) == 0:
-            print("No patients admitted")
+            print("\nAdmissions")
 
-        for a in admissions:
-            print("Patient:", a[0], "Room:", a[1])
+            if len(admissions) == 0:
+                print("No patients admitted")
 
-    elif choice == "5":
+            for a in admissions:
+                print("Patient:", a[0], "Room:", a[1])
 
-        print("\nBills")
+        elif choice == "5":
 
-        if len(bills) == 0:
-            print("No bills")
+            print("\nBills")
 
-        for b in bills:
-            print("Patient:", b[0], "Amount:", b[1])
+            if len(bills) == 0:
+                print("No bills")
 
-    elif choice == "6":
+            for b in bills:
+                print("Patient:", b[0], "Amount:", b[1])
 
-        print("Hospital section closed")
-        break
+        elif choice == "6":
 
-    else:
+            print("Hospital section closed")
+            break
 
-        print("Wrong choice")
+        else:
+
+            print("Wrong choice")
