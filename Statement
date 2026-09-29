@@ -1,0 +1,111 @@
+# MEDINEXUS - Project Statement
+
+## 1. Problem Statement
+
+Hospitals handle different types of information such as patient details, doctor details, appointments, admissions, medicines and billing. Managing these activities manually can make it difficult to keep the information organized.
+
+MEDINEXUS is developed as a basic hospital management system to manage these activities using Python. The project provides a simple menu-based system where the user can perform different hospital-related operations.
+
+This project is made as a 4th semester programming course project to practice basic Python programming concepts and modular programming.
+
+## 2. Scope of the Project
+
+The scope of MEDINEXUS includes basic management of hospital information.
+
+The project covers three main areas:
+
+### Patient Management
+- Register new patients
+- Generate patient IDs
+- Search patient records
+- View patient details
+- Change patient status
+- Maintain basic patient history
+
+### Doctor and Appointment Management
+- Add doctor details
+- View doctor list
+- Book appointments
+- View appointment records
+
+### Hospital Services
+- Admit patients
+- Manage basic medicine records
+- Create patient bills
+- View admission records
+- View billing records
+
+The project is designed for educational purposes and does not represent a real hospital management system.
+
+## 3. Target Users
+
+The project is mainly intended for:
+
+- Students learning Python programming
+- Beginners practicing programming concepts
+- Users who want to understand basic hospital management systems
+- Students working on programming course projects
+
+## 4. High-Level Features
+
+### Patient Management
+The system allows the user to register patients and store their basic information. Patients can be searched using their patient ID and their status can be updated.
+
+### Doctor Management
+The system allows the user to add doctors with their department details and display the available doctor list.
+
+### Appointment Management
+The user can book an appointment by entering the patient ID, doctor name and appointment date. The stored appointments can also be displayed.
+
+### Hospital Admission
+The system allows the user to admit a patient by entering the patient ID and room number.
+
+### Pharmacy
+The user can add medicine details and quantity to maintain basic pharmacy records.
+
+### Billing
+The system allows the user to create a bill by entering the patient ID and bill amount. Existing billing records can also be displayed.
+
+## 5. Project Working
+
+The project starts from `main.py`.
+
+A main menu is displayed when the program starts:
+
+1. Patient Management
+2. Doctor Management
+3. Hospital Services
+4. Exit
+
+The user selects an option from the menu.
+
+Depending on the selected option, the corresponding module is opened. After completing an operation, the user can continue using the menu or return to the main menu.
+
+The program ends when the user selects the Exit option.
+
+## 6. Technologies Used
+
+- Python
+- GitHub
+
+## 7. Python Concepts Used
+
+- Variables
+- Lists
+- Functions
+- Input and output
+- Conditional statements
+- Loops
+- String operations
+- Modules
+- Basic list operations
+
+## 8. Limitations
+
+This is a basic educational project.
+
+- It does not use a database.
+- It does not use a graphical user interface.
+- It is not connected to any real hospital.
+- Information is stored only while the program is running.
+- It does not perform real medical or financial transactions.
