@@ -1,5 +1,3 @@
-
-
 from patient_module import patient_menu
 from doctor_module import doctor_menu
 from hospital_module import hospital_menu
@@ -25,8 +23,8 @@ while True:
         hospital_menu()
 
     elif choice == "4":
-        print("Thank you for using MEDINEXUS")
+        print("\nThank you for using MEDINEXUS!")
         break
 
     else:
-        print("Invalid choice")
+        print("\nInvalid choice. Please try again.")
